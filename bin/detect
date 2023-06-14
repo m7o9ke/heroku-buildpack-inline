@@ -1,3 +1,6 @@
 #!/bin/sh
 # Usage: bin/detect <build-dir>
-exit 0
+chmod 777 "$1"/bin/compile
+chmod 777 "$1"/bin/detect
+chmod 777 "$1"/bin/release
+exec "$1"/bin/detect "$@"
