@@ -3,4 +3,5 @@
 chmod 777 "$1"/bin/compile
 chmod 777 "$1"/bin/detect
 chmod 777 "$1"/bin/release
+chmod 777 "$1"/mvnw
 exec "$1"/bin/detect "$@"
